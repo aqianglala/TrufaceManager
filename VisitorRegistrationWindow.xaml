@@ -1,0 +1,26 @@
+﻿<Window x:Class="tf.VisitorRegistrationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:tf"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Style="{StaticResource MetroWindowStyle}"
+        Title="VisitorRegistrationWindow" Height="450" Width="800">
+    <DockPanel>
+
+        <DockPanel DockPanel.Dock="Top" Background="{StaticResource PrimaryColorBrush}" Height="26" LastChildFill="False">
+            <TextBlock Name="TitleTextBlock" Text="Personnel Registration" Foreground="White" VerticalAlignment="Center" Margin="16,0,0,0"/>
+            <Button BorderBrush="Transparent" DockPanel.Dock="Right" VerticalAlignment="Center" Click="CloseButton_Click"
+                    Width="16" Height="16" Margin="0,0,16,0" Style="{StaticResource CloseBtnStyle}"/>
+        </DockPanel>
+        <Rectangle Width="3" Fill="{StaticResource PrimaryColorBrush}" DockPanel.Dock="Left"/>
+        <Rectangle Width="3" Fill="{StaticResource PrimaryColorBrush}" DockPanel.Dock="Right"/>
+        <Rectangle Height="3" Fill="{StaticResource PrimaryColorBrush}" DockPanel.Dock="Bottom"/>
+        <Grid>
+            
+        </Grid>
+
+    </DockPanel>
+</Window>

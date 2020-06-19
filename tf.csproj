@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="close.png" />
+    <None Remove="fingerprint.png" />
+    <None Remove="password.png" />
+    <None Remove="resources\pull_down.png" />
+    <None Remove="user.png" />
+    <None Remove="user2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Xceed.Wpf.Toolkit">
+      <HintPath>..\..\libs\Extended.WPF.Toolkit.Binaries.NET.4.x\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="close.png" />
+    <Resource Include="fingerprint.png" />
+    <Resource Include="password.png" />
+    <Resource Include="resources\pull_down.png" />
+    <Resource Include="user.png" />
+    <Resource Include="user2.png" />
+  </ItemGroup>
+
+</Project>
